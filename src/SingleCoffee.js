@@ -23,7 +23,7 @@ export default function SingleCoffee ({entireObject}) { // take out name, price,
           <h3>{entireObject.name}</h3> 
           <span>Price: {entireObject.price}</span>
           <p>{entireObject.description}</p>
-          <button onClick={() => setFavorite(true)}>Favorite</button>
+          <button onClick={() => setFavorite(!setFavorite)}>Favorite</button>
           {/* each single coffee gets to keep its own state */}
         </div>
       </div>
